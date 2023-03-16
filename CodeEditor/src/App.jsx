@@ -1,11 +1,13 @@
 import './App.css'
+import CodeBar from './components/CodeBar/CodeBar'
+import { EditorProvider } from './context/context'
 
 function App() {
 
   return (
-    <div className="App">
-      
-    </div>
+    <EditorProvider>
+      <CodeBar />
+    </EditorProvider>
   )
 }
 
