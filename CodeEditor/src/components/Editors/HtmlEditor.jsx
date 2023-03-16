@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import AceEditor from "react-ace";
 
 import "ace-builds/src-noconflict/mode-html";
@@ -6,10 +6,17 @@ import "ace-builds/src-noconflict/theme-solarized_dark";
 import "ace-builds/src-noconflict/snippets/html";
 import "ace-builds/src-noconflict/ext-language_tools";
 
+import { EditorContext } from "../../context/context";
+
 export default function HtmlEditor() {
+
+  const {html, setHtml} = useContext(EditorContext)
+
   return (
     <div>
       <AceEditor
+        value={html}
+        onChange={value => setHtml(value)}
         width="100%"
         height="850px"
         placeholder="Happy hacking!"

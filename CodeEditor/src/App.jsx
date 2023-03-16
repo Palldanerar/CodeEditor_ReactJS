@@ -1,5 +1,6 @@
 import styles from './App.module.css'
 import CodeBar from './components/CodeBar/CodeBar'
+import Preview from './components/Preview/Preview'
 import { EditorProvider } from './context/context'
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
       <CodeBar />
 
       <div className={styles.main}>
-        
+        <Preview />
       </div>
     </EditorProvider>
   )
