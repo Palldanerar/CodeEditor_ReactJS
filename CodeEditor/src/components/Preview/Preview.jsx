@@ -28,7 +28,7 @@ export default function Preview() {
   return (
     <div className={styles.content}>
         {
-            document ? <iframe title="preview" className={styles.preview} srcDoc={document}/>
+            document ? <iframe frameborder="0" title="preview" className={styles.preview} srcDoc={document}/>
             : <div className={styles.loading}>Happy hacking!</div>
         }
     </div>
