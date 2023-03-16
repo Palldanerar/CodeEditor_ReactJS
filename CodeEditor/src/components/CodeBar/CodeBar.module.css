@@ -1,35 +1,40 @@
 .codebar {
-    width: 600px;
-    background: #272822;
-    position: relative;
+  width: 750px;
+  background: #002b36;
+  position: relative;
 }
 
 .tab {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 70px;
-    padding: 0 15px;
-    gap: 15px;
-    border-bottom: 2px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  padding: 0 15px;
+  gap: 15px;
+  border-bottom: 2px solid #333;
 }
 
 .item {
-    display: flex;
-    height: 50px;
-    flex: 1 1 auto;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    background: #333;
-    color: white;
-    cursor: pointer;
-    font-size: 15px;
-    outline: none;
-    border: none;
+  display: flex;
+  height: 50px;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: #4C6A72;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  transition: background 0.2s ease;
 }
 
 .active {
-    background: #ffba00;
+  background: #ffba00;
 }
 
+.editor {
+    height: calc(100vh - 70px);
+    padding: 10px;
+}
