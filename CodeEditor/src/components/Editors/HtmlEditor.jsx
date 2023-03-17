@@ -18,7 +18,7 @@ export default function HtmlEditor() {
         value={html}
         onChange={value => setHtml(value)}
         width="100%"
-        height="850px"
+        height="600px"
         placeholder="Happy hacking!"
         mode="html"
         theme="solarized_dark"

@@ -18,7 +18,7 @@ export default function JsEditor() {
         value={js}
         onChange={value => setJS(value)}
         width="100%"
-        height="850px"
+        height="600px"
         placeholder="Happy hacking!"
         mode="javascript"
         theme="solarized_dark"

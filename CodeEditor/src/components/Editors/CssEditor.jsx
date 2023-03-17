@@ -18,7 +18,7 @@ export default function CssEditor() {
         value={css}
         onChange={value => setCss(value)}
         width="100%"
-        height="850px"
+        height="600px"
         placeholder="Happy hacking!"
         mode="css"
         theme="solarized_dark"
