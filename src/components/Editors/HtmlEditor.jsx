@@ -9,16 +9,15 @@ import "ace-builds/src-noconflict/ext-language_tools";
 import { EditorContext } from "../../context/context";
 
 export default function HtmlEditor() {
-
-  const {html, setHtml} = useContext(EditorContext)
+  const { html, setHtml } = useContext(EditorContext);
 
   return (
     <div>
       <AceEditor
         value={html}
-        onChange={value => setHtml(value)}
+        onChange={(value) => setHtml(value)}
         width="100%"
-        height="600px"
+        height="800px"
         placeholder="Happy hacking!"
         mode="html"
         theme="solarized_dark"
